@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashvanth Technologies - Feel the innovative technology</title>
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family, though Tailwind defaults to system fonts, this is a good practice -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Light background for contrast */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Primary Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-2xl font-extrabold text-yellow-500 tracking-tight">
+                Dashvanth<span class="text-green-500">Technologies</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex space-x-8 text-lg font-medium">
+                <a href="#services" class="text-gray-600 hover:text-indigo-700 transition duration-300">Services</a>
+                <a href="#case-studies" class="text-gray-600 hover:text-indigo-700 transition duration-300">Case Studies</a>
+                <a href="#about" class="text-gray-600 hover:text-indigo-700 transition duration-300">About Us</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-700 transition duration-300">Contact</a>
+            </nav>
+
+            <!-- Desktop CTA Button -->
+            <a href="#contact" class="hidden lg:block bg-cyan-500 text-white px-6 py-2 rounded-xl font-semibold shadow-lg hover:bg-cyan-600 transition duration-300">
+                Get Proposal
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="lg:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100">
+            <nav class="px-4 pt-2 pb-4 space-y-2 text-center text-lg">
+                <a href="#services" class="block py-2 text-gray-600 hover:bg-gray-50 rounded-lg">Services</a>
+                <a href="#case-studies" class="block py-2 text-gray-600 hover:bg-gray-50 rounded-lg">Case Studies</a>
+                <a href="#about" class="block py-2 text-gray-600 hover:bg-gray-50 rounded-lg">About Us</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:bg-gray-50 rounded-lg">Contact</a>
+                <a href="#contact" class="block bg-indigo-600 text-white px-4 py-2 mt-4 rounded-xl font-semibold hover:bg-indigo-700">Get Proposal</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="bg-indigo-700 text-white py-24 sm:py-32">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-6">
+                    We Build Digital <span class="text-cyan-400">Dominance.</span>
+                </h1>
+                <p class="text-xl sm:text-2xl mb-10 max-w-4xl mx-auto opacity-90">
+                    Unlocking predictable revenue growth with data-driven PPC, SEO, and Content strategies for ambitious B2B and E-commerce brands.
+                </p>
+                <a href="#contact" class="inline-block bg-cyan-500 text-indigo-900 text-xl font-bold px-10 py-4 rounded-full shadow-2xl transition duration-300 transform hover:scale-105 hover:bg-cyan-400">
+                    Start Your Free Strategy Session
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. Trust Bar (Social Proof) -->
+        <section class="bg-gray-50 py-12">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-center text-xl font-semibold text-gray-500 mb-8">
+                    Trusted by industry leaders and ambitious startups
+                </h2>
+                <div class="flex flex-wrap justify-center items-center space-x-6 md:space-x-12 lg:space-x-16 opacity-75">
+                    <!-- Placeholder Logos. Use SVGs/Text for real sites. -->
+                    <span class="text-gray-400 text-3xl font-mono">TechCorp</span>
+                    <span class="text-gray-400 text-3xl font-mono">Innovate</span>
+                    <span class="text-gray-400 text-3xl font-mono">Global E</span>
+                    <span class="text-gray-400 text-3xl font-mono hidden sm:inline">Streamline</span>
+                    <span class="text-gray-400 text-3xl font-mono hidden md:inline">Healthify</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Core Services -->
+        <section id="services" class="py-20 sm:py-28 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-indigo-900 mb-4">Our Core Growth Pillars</h2>
+                <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">
+                    We focus on integrated strategies that generate measurable returns, not just vanity metrics.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-10">
+                    <!-- Service 1: Paid Media -->
+                    <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-cyan-500 transition duration-300 hover:shadow-indigo-200/50">
+                        <div class="text-cyan-500 mb-4">
+                            <!-- Icon Placeholder (lucide-react icon equivalent: DollarSign) -->
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V6m0 12v-2"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-indigo-800 mb-3">Paid Media & PPC</h3>
+                        <p class="text-gray-600 mb-6">
+                            Maximize ROI across Google Ads, Meta, and LinkedIn. We handle full funnel management from creative testing to budget optimization.
+                        </p>
+                        <a href="#contact" class="text-cyan-600 font-semibold hover:text-cyan-700 flex items-center">
+                            Learn More &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Service 2: SEO -->
+                    <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-indigo-500 transition duration-300 hover:shadow-indigo-200/50">
+                        <div class="text-indigo-500 mb-4">
+                            <!-- Icon Placeholder (lucide-react icon equivalent: TrendingUp) -->
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-indigo-800 mb-3">Organic Search (SEO)</h3>
+                        <p class="text-gray-600 mb-6">
+                            Secure top rankings and consistent organic traffic. Our strategy covers technical SEO, link building, and keyword targeting.
+                        </p>
+                        <a href="#contact" class="text-indigo-600 font-semibold hover:text-indigo-700 flex items-center">
+                            Learn More &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Service 3: Content Strategy -->
+                    <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-gray-500 transition duration-300 hover:shadow-indigo-200/50">
+                        <div class="text-gray-500 mb-4">
+                            <!-- Icon Placeholder (lucide-react icon equivalent: Writing) -->
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-indigo-800 mb-3">High-Value Content</h3>
+                        <p class="text-gray-600 mb-6">
+                            Attract, educate, and convert customers with expert blog posts, white papers, and lead magnets tailored to your audience.
+                        </p>
+                        <a href="#contact" class="text-gray-600 font-semibold hover:text-gray-700 flex items-center">
+                            Learn More &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Case Study Spotlight -->
+        <section id="case-studies" class="py-20 sm:py-28 bg-indigo-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-indigo-900 mb-10">
+                        See The Results: Success Spotlight
+                    </h2>
+                </div>
+
+                <div class="bg-white p-6 sm:p-10 lg:p-12 rounded-2xl shadow-2xl lg:flex items-center space-y-6 lg:space-y-0 lg:space-x-12">
+                    <div class="lg:w-1/2">
+                        <p class="text-sm font-semibold text-cyan-600 uppercase tracking-wider mb-2">E-COMMERCE GROWTH</p>
+                        <h3 class="text-3xl font-extrabold text-indigo-900 mb-4">
+                            1200% ROI & 7x Revenue Increase
+                        </h3>
+                        <p class="text-gray-600 mb-6">
+                            A leading apparel brand was struggling with inconsistent ad performance. Dashvanth Technologies restructured their Meta campaigns, implemented advanced lookalike audiences, and launched a continuous A/B testing framework.
+                        </p>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li>Restructured 100+ ad sets for efficiency.</li>
+                            <li>Reduced CPA by 40% in the first quarter.</li>
+                            <li>Achieved a sustainable 7.2x Return on Ad Spend (ROAS).</li>
+                        </ul>
+                        <div class="mt-8">
+                            <a href="#contact" class="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-xl shadow-lg hover:bg-indigo-700 transition duration-300">
+                                View More Case Studies
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 flex justify-center">
+                        <!-- Placeholder for a graph or metric display -->
+                        <div class="bg-cyan-100 p-8 rounded-xl w-full max-w-sm text-center shadow-inner">
+                            <p class="text-6xl font-extrabold text-cyan-700">+720%</p>
+                            <p class="text-xl font-semibold text-indigo-700 mt-2">Annual Revenue Lift</p>
+                            <p class="text-sm text-gray-500 mt-1">Client: Apex Apparel (2024)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. About Us (Why Ascend) -->
+        <section id="about" class="py-20 sm:py-28 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-4xl font-bold text-indigo-900 mb-4">Why Choose Dashvanth Technologies?</h2>
+                    <p class="text-xl text-gray-600">
+                        We are not just vendors; we are your dedicated, data-obsessed growth partners.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Feature 1: Transparency -->
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-lg">
+                        <div class="text-indigo-600 mx-auto mb-4">
+                            <!-- Icon: Eye -->
+                            <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                        </div>
+                        <h4 class="text-xl font-semibold text-indigo-800 mb-2">100% Transparency</h4>
+                        <p class="text-gray-600 text-sm">You get direct access to all data, dashboards, and accounts. No secrets, just clarity.</p>
+                    </div>
+
+                    <!-- Feature 2: Senior Experts -->
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-lg">
+                        <div class="text-indigo-600 mx-auto mb-4">
+                            <!-- Icon: User Check -->
+                            <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <h4 class="text-xl font-semibold text-indigo-800 mb-2">Senior-Level Team</h4>
+                        <p class="text-gray-600 text-sm">Your account is managed by seasoned strategists, not junior account managers.</p>
+                    </div>
+
+                    <!-- Feature 3: Custom Strategy -->
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-lg">
+                        <div class="text-indigo-600 mx-auto mb-4">
+                            <!-- Icon: Target -->
+                            <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.226a2 2 0 01-1.789-2.894l3.5-7z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 6a2 2 0 012-2h4a2 2 0 012 2v6a2 2 0 01-2 2H9a2 2 0 01-2-2V6z"/></svg>
+                        </div>
+                        <h4 class="text-xl font-semibold text-indigo-800 mb-2">Metrics-Driven Focus</h4>
+                        <p class="text-gray-600 text-sm">Every action is tied to a measurable business outcome, focusing strictly on ROI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Contact/Get Started Form -->
+        <section id="contact" class="py-20 sm:py-28 bg-indigo-700">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto bg-white p-6 sm:p-10 rounded-2xl shadow-2xl">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-indigo-900 text-center mb-4">
+                        Stop Guessing, Start Growing.
+                    </h2>
+                    <p class="text-xl text-center text-gray-600 mb-10">
+                        Request your free, no-obligation strategy review today.
+                    </p>
+
+                    <form action="mailto:hrdca.consultants@gmail.com" method="POST" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="full-name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                <input type="text" id="full-name" name="full-name" placeholder="John Doe" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-cyan-500 focus:border-cyan-500 transition duration-150" required>
+                            </div>
+                            <div>
+                                <label for="work-email" class="block text-sm font-medium text-gray-700 mb-1">Work Email</label>
+                                <input type="email" id="work-email" name="work-email" placeholder="work@company.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-cyan-500 focus:border-cyan-500 transition duration-150" required>
+                            </div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="company-name" class="block text-sm font-medium text-gray-700 mb-1">Company Name</label>
+                                <input type="text" id="company-name" name="company-name" placeholder="Dashvanth Technologies" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-cyan-500 focus:border-cyan-500 transition duration-150">
+                            </div>
+                            <div>
+                                <label for="website" class="block text-sm font-medium text-gray-700 mb-1">Website URL</label>
+                                <input type="url" id="website" name="website" placeholder="https://yourwebsite.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-cyan-500 focus:border-cyan-500 transition duration-150">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Tell Us About Your Goals</label>
+                            <textarea id="message" name="message" rows="4" placeholder="I'm looking to increase e-commerce sales by 50% this quarter..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-cyan-500 focus:border-cyan-500 transition duration-150" required></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-cyan-500 text-indigo-900 text-xl font-bold px-8 py-4 rounded-xl shadow-lg hover:bg-cyan-400 transition duration-300 transform hover:scale-[1.01]">
+                            Request Strategy Review
+                        </button>
+                    </form>
+
+                    <p class="text-center text-sm text-gray-500 mt-6">
+                        We respect your privacy. You will receive a response within 1 business day.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-10 border-b border-gray-700 pb-8 mb-8">
+                <!-- Col 1: Logo & Mission -->
+                <div>
+                    <div class="text-2xl font-extrabold text-white tracking-tight mb-3">
+                        Dashvanth<span class="text-cyan-500">Technologies</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Building digital dominance through measurable and transparent strategies.
+                    </p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h5 class="text-lg font-semibold mb-4 text-cyan-400">Quick Links</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition duration-200">Our Services</a></li>
+                        <li><a href="#case-studies" class="text-gray-300 hover:text-white transition duration-200">Success Stories</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition duration-200">Our Team</a></li>
+                        <li><a href="https://dashvanthtech.blogspot.com/" class="text-gray-300 hover:text-white transition duration-200">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services Summary -->
+                <div>
+                    <h5 class="text-lg font-semibold mb-4 text-cyan-400">Services</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition duration-200">Paid Media (PPC)</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition duration-200">Technical SEO</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition duration-200">Content Strategy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition duration-200">Conversion Rate Optimization</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Info -->
+                <div>
+                    <h5 class="text-lg font-semibold mb-4 text-cyan-400">Get In Touch</h5>
+                    <p class="text-gray-300 text-sm">hrdca.consultants@gmail.com</p>
+                    <p class="text-gray-300 text-sm mt-1">+91 9445466382</p>
+                    <p class="text-gray-400 text-xs mt-4">
+                        123 Growth Lane, Suite 400<br>
+                        Digital City, DM 10101
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500 pt-4">
+                <p>&copy; 2025 Dashvanth Technologies Agency. All rights reserved.</p>
+                <div class="flex space-x-4 mt-3 sm:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Smooth Scrolling -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Toggle mobile menu visibility
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // Prevent default hash behavior if just scrolling
+                if (link.getAttribute('href').startsWith('#')) {
+                    mobileMenu.classList.add('hidden');
+                    e.preventDefault();
+                    document.querySelector(link.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Smooth scrolling for desktop links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Only prevent default if it's a link to a section on the same page
+                const targetId = this.getAttribute('href');
+                if (targetId && targetId.length > 1 && document.querySelector(targetId)) {
+                    e.preventDefault();
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
